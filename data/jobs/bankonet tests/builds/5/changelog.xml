@@ -1,0 +1,13 @@
+commit 43da9eda054692329fc93672da9f4d3ba36e62e0
+tree a499003bf9e246a463b5645d8dedbb464954bc32
+parent 43d4878e995274b89e859afb5f921b2ca7c90503
+author MaximeGirma <mgi@ucar.fr> 2019-12-03 09:24:06 +0100
+committer MaximeGirma <mgi@ucar.fr> 2019-12-03 09:24:06 +0100
+
+    add jenkins file
+
+
+:000000 100644 0000000000000000000000000000000000000000 4c53edd9ce4ce386d6f6b42f0b7afb38a0321330 A	Jenkinsfile
+:100644 100644 6a52755079ab6d3dbcbd94026809d432f9f2175b d41251644291e1f20efca0d9a93c38461fef8b7f M	src/main/java/com/awesomedev/bankonet/App.java
+:100644 100644 17ac510c8c0ca783f1070003ce3d605cbdb8f261 0868b003653bdff73f2885f4fc1188f25a19e1fb M	src/test/java/com/awesomedev/bankonet/controllers/UserControllerTest.java
+:100644 100644 cf38bff87262c4aafe8ab6ef6fb68378cec4139e ed3a06dd4d40f6e99428922c3473d4fa3249e9b8 M	src/test/java/com/awesomedev/bankonet/services/UserServiceTest.java

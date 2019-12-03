@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  app:
+    container_name: ${APP_NAME}
+    build:
+      context: .
+      dockerfile: services/jenkins/Dockerfile
+    ports:
+    - ${APP_PORT}:8080
+    volumes:
+    - ./data:/var/jenkins_home
+
+
+

@@ -1,0 +1,84 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/bankonet tests
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/maximeGirma/bankonet.git # timeout=10
+Fetching upstream changes from https://github.com/maximeGirma/bankonet.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/maximeGirma/bankonet.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 2e30e7da3a19c29ee28314786d0bbad6e27e8038 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2e30e7da3a19c29ee28314786d0bbad6e27e8038 # timeout=10
+Commit message: "break project"
+ > git rev-list --no-walk 43da9eda054692329fc93672da9f4d3ba36e62e0 # timeout=10
+[bankonet tests] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.6.3/bin/mvn test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.awesomedev.bankonet:bankonet >------------------
+[INFO] Building bankonet 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4L4bwjrYln0e1sEQvBoqDz7RoxLUn+/Xa6sdqisoGiSqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ bankonet ---
+[INFO] argLine set to "-javaagent:/var/jenkins_home/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/var/jenkins_home/workspace/bankonet tests/target/jacoco.exec"
+[INFO] 
+[8mha:////4L4bwjrYln0e1sEQvBoqDz7RoxLUn+/Xa6sdqisoGiSqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ bankonet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/bankonet tests/src/main/resources
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/bankonet tests/src/main/resources
+[INFO] 
+[8mha:////4L4bwjrYln0e1sEQvBoqDz7RoxLUn+/Xa6sdqisoGiSqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ bankonet ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /var/jenkins_home/workspace/bankonet tests/target/classes
+[INFO] -------------------------------------------------------------
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[26,5] illegal start of expression
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[27,35] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[28,40] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[28,77] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[28,86] not a statement
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[28,109] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[36,57] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[45,19] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[45,44] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[51,24] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[51,49] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[51,58] not a statement
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[51,67] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[54,2] reached end of file while parsing
+[INFO] 14 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22.559 s
+[INFO] Finished at: 2019-12-03T08:35:32Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project bankonet: Compilation failure: Compilation failure: 
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[26,5] illegal start of expression
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[27,35] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[28,40] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[28,77] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[28,86] not a statement
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[28,109] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[36,57] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[45,19] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[45,44] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[51,24] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[51,49] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[51,58] not a statement
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[51,67] ';' expected
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] /var/jenkins_home/workspace/bankonet tests/src/main/java/com/awesomedev/bankonet/controllers/UserController.java:[54,2] reached end of file while parsing
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] -> [Help 1]
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4IiZM34rSQjzl6kXv/ZqeB9QN0BGc8OFZLar0LZiqDfJAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

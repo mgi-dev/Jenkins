@@ -1,0 +1,232 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/bankonet tests
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/maximeGirma/bankonet.git # timeout=10
+Fetching upstream changes from https://github.com/maximeGirma/bankonet.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/maximeGirma/bankonet.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 43da9eda054692329fc93672da9f4d3ba36e62e0 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 43da9eda054692329fc93672da9f4d3ba36e62e0 # timeout=10
+Commit message: "add jenkins file"
+ > git rev-list --no-walk 43da9eda054692329fc93672da9f4d3ba36e62e0 # timeout=10
+[bankonet tests] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.6.3/bin/mvn test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.awesomedev.bankonet:bankonet >------------------
+[INFO] Building bankonet 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4L4bwjrYln0e1sEQvBoqDz7RoxLUn+/Xa6sdqisoGiSqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.7.7.201606060606:prepare-agent (default) @ bankonet ---
+[INFO] argLine set to "-javaagent:/var/jenkins_home/.m2/repository/org/jacoco/org.jacoco.agent/0.7.7.201606060606/org.jacoco.agent-0.7.7.201606060606-runtime.jar=destfile=/var/jenkins_home/workspace/bankonet tests/target/jacoco.exec"
+[INFO] 
+[8mha:////4L4bwjrYln0e1sEQvBoqDz7RoxLUn+/Xa6sdqisoGiSqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ bankonet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/bankonet tests/src/main/resources
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/bankonet tests/src/main/resources
+[INFO] 
+[8mha:////4L4bwjrYln0e1sEQvBoqDz7RoxLUn+/Xa6sdqisoGiSqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ bankonet ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 21 source files to /var/jenkins_home/workspace/bankonet tests/target/classes
+[INFO] 
+[8mha:////4L4bwjrYln0e1sEQvBoqDz7RoxLUn+/Xa6sdqisoGiSqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ bankonet ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/bankonet tests/src/test/resources
+[INFO] 
+[8mha:////4L4bwjrYln0e1sEQvBoqDz7RoxLUn+/Xa6sdqisoGiSqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ bankonet ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /var/jenkins_home/workspace/bankonet tests/target/test-classes
+[INFO] 
+[8mha:////4L4bwjrYln0e1sEQvBoqDz7RoxLUn+/Xa6sdqisoGiSqAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ bankonet ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.awesomedev.bankonet.AppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in com.awesomedev.bankonet.AppTest
+[INFO] Running com.awesomedev.bankonet.controllers.UserControllerTest
+08:26:36.867 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.awesomedev.bankonet.controllers.UserControllerTest]
+08:26:36.883 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+08:26:36.926 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+08:26:37.048 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.awesomedev.bankonet.controllers.UserControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+08:26:37.091 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.awesomedev.bankonet.controllers.UserControllerTest], using SpringBootContextLoader
+08:26:37.117 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.awesomedev.bankonet.controllers.UserControllerTest]: class path resource [com/awesomedev/bankonet/controllers/UserControllerTest-context.xml] does not exist
+08:26:37.120 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.awesomedev.bankonet.controllers.UserControllerTest]: class path resource [com/awesomedev/bankonet/controllers/UserControllerTestContext.groovy] does not exist
+08:26:37.120 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.awesomedev.bankonet.controllers.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+08:26:37.125 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.awesomedev.bankonet.controllers.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:26:37.546 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.awesomedev.bankonet.controllers.UserControllerTest]
+08:26:38.134 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/var/jenkins_home/workspace/bankonet tests/target/classes/com/awesomedev/bankonet/App.class]
+08:26:38.149 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.awesomedev.bankonet.App for test class com.awesomedev.bankonet.controllers.UserControllerTest
+08:26:38.523 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.awesomedev.bankonet.controllers.UserControllerTest]: using defaults.
+08:26:38.525 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+08:26:38.650 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2e952845, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@79252c83, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6fbf5db2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@509a6095, org.springframework.test.context.support.DirtiesContextTestExecutionListener@57cabdc3, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75bd28d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@129c4d19, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@11810917, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13278a41, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4a31ed12, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3ab595c8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2365ea38]
+08:26:38.671 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.awesomedev.bankonet.controllers.UserControllerTest]
+08:26:38.672 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.awesomedev.bankonet.controllers.UserControllerTest]
+08:26:38.687 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.awesomedev.bankonet.controllers.UserControllerTest]
+08:26:38.688 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.awesomedev.bankonet.controllers.UserControllerTest]
+08:26:38.692 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.awesomedev.bankonet.controllers.UserControllerTest]
+08:26:38.692 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.awesomedev.bankonet.controllers.UserControllerTest]
+08:26:38.734 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5384ce66 testClass = UserControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6b42e36d testClass = UserControllerTest, locations = '{}', classes = '{class com.awesomedev.bankonet.App}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@13192275 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5fc930f0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7c2312fa, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@455824ad, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@c6da8bb], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+08:26:38.755 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.awesomedev.bankonet.controllers.UserControllerTest]
+08:26:38.756 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.awesomedev.bankonet.controllers.UserControllerTest]
+08:26:38.896 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-12-03 08:26:40.612  INFO 402 --- [           main] c.a.b.controllers.UserControllerTest     : Starting UserControllerTest on 70cccd6bc6f4 with PID 402 (started by jenkins in /var/jenkins_home/workspace/bankonet tests)
+2019-12-03 08:26:40.620  INFO 402 --- [           main] c.a.b.controllers.UserControllerTest     : No active profile set, falling back to default profiles: default
+2019-12-03 08:26:45.288  INFO 402 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 08:26:45.600  INFO 402 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 282ms. Found 2 repository interfaces.
+2019-12-03 08:26:47.273  INFO 402 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$65316c64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 08:26:48.087  INFO 402 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-03 08:26:48.854  INFO 402 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-03 08:26:49.196  INFO 402 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-03 08:26:49.542  INFO 402 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-12-03 08:26:49.553  INFO 402 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-12-03 08:26:50.142  INFO 402 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-12-03 08:26:50.733  INFO 402 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-03 08:26:52.775  INFO 402 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@cd3ea35'
+2019-12-03 08:26:52.782  INFO 402 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 08:26:55.420  INFO 402 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 08:26:55.565  WARN 402 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 08:26:58.662  INFO 402 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-12-03 08:26:58.664  INFO 402 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-12-03 08:26:58.715  INFO 402 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-03 08:26:58.850  INFO 402 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 184 ms
+2019-12-03 08:26:58.954  INFO 402 --- [           main] c.a.b.controllers.UserControllerTest     : Started UserControllerTest in 19.999 seconds (JVM running for 25.084)
+2019-12-03 08:26:59.426  INFO 402 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+===========================================
+[]
+GOOD
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+[Ljava.lang.String;@475fc839
+===========================================
+[]
+GOOD
+===========================================
+[]
+GOOD
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.412 s - in com.awesomedev.bankonet.controllers.UserControllerTest
+[INFO] Running com.awesomedev.bankonet.Models.ClientTest
+2019-12-03 08:27:00.617  INFO 402 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.awesomedev.bankonet.Models.ClientTest], using DelegatingSmartContextLoader
+2019-12-03 08:27:00.637  INFO 402 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.awesomedev.bankonet.Models.ClientTest]: no resource found for suffixes {-context.xml}.
+2019-12-03 08:27:00.646  INFO 402 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.awesomedev.bankonet.Models.ClientTest]: ClientTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-03 08:27:00.672  INFO 402 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-03 08:27:00.675  INFO 402 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6caa5151, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1321c750, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@52e6264c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2140046, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3c8af98c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@218cb20a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@42bb3431, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@600f1a10, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@ba2d904, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4f7a2698, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@54fb99fa, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4cbcd6ef]
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in com.awesomedev.bankonet.Models.ClientTest
+[INFO] Running com.awesomedev.bankonet.Models.CompteCourantTest
+2019-12-03 08:27:00.718  INFO 402 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.awesomedev.bankonet.Models.CompteCourantTest], using DelegatingSmartContextLoader
+2019-12-03 08:27:00.723  INFO 402 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.awesomedev.bankonet.Models.CompteCourantTest]: no resource found for suffixes {-context.xml}.
+2019-12-03 08:27:00.724  INFO 402 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.awesomedev.bankonet.Models.CompteCourantTest]: CompteCourantTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-03 08:27:00.726  INFO 402 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-03 08:27:00.727  INFO 402 --- [           main] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@18629246, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ce423d5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@a38ae3d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5072ccca, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c8e9420, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1139eeef, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5ebfe3b3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@186d7032, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@306ac88b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6efa16ff, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4f79d2e8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3ce6c7d5]
+==========================================================
+==========================================================
+==========================================================
+==========================================================
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in com.awesomedev.bankonet.Models.CompteCourantTest
+[INFO] Running com.awesomedev.bankonet.services.UserServiceTest
+2019-12-03 08:27:00.763  INFO 402 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.awesomedev.bankonet.services.UserServiceTest], using SpringBootContextLoader
+2019-12-03 08:27:00.806  INFO 402 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.awesomedev.bankonet.services.UserServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-03 08:27:00.807  INFO 402 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.awesomedev.bankonet.services.UserServiceTest]: UserServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-03 08:27:00.858  INFO 402 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.awesomedev.bankonet.App for test class com.awesomedev.bankonet.services.UserServiceTest
+2019-12-03 08:27:00.865  INFO 402 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-03 08:27:00.871  INFO 402 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c722119, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3c87b36e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@53676e50, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3c889efd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61af1a9c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6032d904, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8cf2ebc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7048362e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69aab941, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1fa6a789, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6eedd00f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5f2572ba]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2019-12-03 08:27:00.942  INFO 402 --- [           main] c.a.bankonet.services.UserServiceTest    : Starting UserServiceTest on 70cccd6bc6f4 with PID 402 (started by jenkins in /var/jenkins_home/workspace/bankonet tests)
+2019-12-03 08:27:00.943  INFO 402 --- [           main] c.a.bankonet.services.UserServiceTest    : No active profile set, falling back to default profiles: default
+2019-12-03 08:27:02.329  INFO 402 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-03 08:27:02.634  INFO 402 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 303ms. Found 2 repository interfaces.
+2019-12-03 08:27:02.903  INFO 402 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$65316c64] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-03 08:27:03.069  INFO 402 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-12-03 08:27:03.078  INFO 402 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-12-03 08:27:03.144  INFO 402 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-12-03 08:27:03.215  INFO 402 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-03 08:27:03.402  INFO 402 --- [           main] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@cd3ea35'
+2019-12-03 08:27:03.404  INFO 402 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 08:27:04.249  INFO 402 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-03 08:27:04.272  WARN 402 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-03 08:27:05.258  INFO 402 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-03 08:27:05.336  INFO 402 --- [           main] c.a.bankonet.services.UserServiceTest    : Started UserServiceTest in 4.454 seconds (JVM running for 31.465)
+2019-12-03 08:27:05.362  INFO 402 --- [           main] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@21ec6a4e testClass = UserServiceTest, testInstance = com.awesomedev.bankonet.services.UserServiceTest@25ff17d4, testMethod = testIndex@UserServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@34944e04 testClass = UserServiceTest, locations = '{}', classes = '{class com.awesomedev.bankonet.App}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5fc930f0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7c2312fa, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@455824ad, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@c6da8bb], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@7d3a1ca5]; rollback [true]
+2019-12-03 08:27:05.370  INFO 402 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-12-03 08:27:05.388  INFO 402 --- [           main] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@21ec6a4e testClass = UserServiceTest, testInstance = com.awesomedev.bankonet.services.UserServiceTest@25ff17d4, testMethod = testIndex@UserServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@34944e04 testClass = UserServiceTest, locations = '{}', classes = '{class com.awesomedev.bankonet.App}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5fc930f0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7c2312fa, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@455824ad, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@c6da8bb], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+===========================================
+[]
+GOOD
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''''''''''''''''''''''''
+[Ljava.lang.String;@61803b63
+===========================================
+[]
+GOOD
+===========================================
+[]
+GOOD
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.664 s - in com.awesomedev.bankonet.services.UserServiceTest
+2019-12-03 08:27:05.612  INFO 402 --- [       Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-03 08:27:05.621  INFO 402 --- [       Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-03 08:27:05.638  INFO 402 --- [       Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 08:27:05.641  INFO 402 --- [       Thread-8] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-03 08:27:05.644  INFO 402 --- [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-03 08:27:05.651  INFO 402 --- [       Thread-5] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-03 08:27:06.003  INFO 402 --- [       Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-194]
+2019-12-03 08:27:06.005  INFO 402 --- [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-03 08:27:06.003  INFO 402 --- [       Thread-8] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-194]
+2019-12-03 08:27:06.006  INFO 402 --- [       Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2019-12-03 08:27:06.022  INFO 402 --- [       Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2019-12-03 08:27:06.027  INFO 402 --- [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  48.632 s
+[INFO] Finished at: 2019-12-03T08:27:06Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
