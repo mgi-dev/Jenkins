@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="419f5ce3-3c79-447c-a20d-c28b52b30e9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/builds/20/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/builds/20/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/builds/20/log" beforeDir="false" afterPath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/builds/20/log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/builds/20/log-index" beforeDir="false" afterPath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/builds/20/log-index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/builds/20/program.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/builds/permalinks" beforeDir="false" afterPath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/builds/permalinks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/nextBuildNumber" beforeDir="false" afterPath="$PROJECT_DIR$/data/jobs/Tests Pipeline MVN/nextBuildNumber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/jobs/bankonet tests/builds/permalinks" beforeDir="false" afterPath="$PROJECT_DIR$/data/jobs/bankonet tests/builds/permalinks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/jobs/bankonet tests/nextBuildNumber" beforeDir="false" afterPath="$PROJECT_DIR$/data/jobs/bankonet tests/nextBuildNumber" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,6 +44,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Dockerfile" value="1" />
           <entry key="env" value="10" />
           <entry key="gitignore" value="37" />
           <entry key="yml" value="16" />
@@ -59,6 +53,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="10" />
+          <entry key="Dockerfile" value="1" />
           <entry key="Git file" value="37" />
           <entry key="YAML" value="16" />
         </counts>
@@ -76,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/jenkins/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -109,11 +104,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
-              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -136,10 +131,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/services/jenkins/Dockerfile" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/services/jenkins/Dockerfile" />
       </list>
     </option>
   </component>
@@ -180,7 +175,26 @@
             <path>
               <item name="jenkins" type="b2602c69:ProjectViewProjectNode" />
               <item name="jenkins" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jenkins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+              <item name="bankonet tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jenkins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jenkins" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="jenkins" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -191,7 +205,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575366603274" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575367814471" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -221,12 +235,12 @@
       <option name="presentableId" value="Default" />
       <updated>1575303809708</updated>
       <workItem from="1575303811530" duration="1715000" />
-      <workItem from="1575360822945" duration="4035000" />
+      <workItem from="1575360822945" duration="4573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5750000" />
+    <option name="totallyTimeSpent" value="6288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -246,7 +260,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.35573772" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4885246" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="10" />
@@ -276,13 +290,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/services/jenkins/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/config.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -309,7 +316,14 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/jenkins/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
