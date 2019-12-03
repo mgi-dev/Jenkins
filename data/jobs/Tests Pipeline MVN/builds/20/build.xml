@@ -142,7 +142,8 @@
   <queueId>43</queueId>
   <timestamp>1575366240970</timestamp>
   <startTime>1575366240991</startTime>
-  <duration>0</duration>
+  <result>SUCCESS</result>
+  <duration>207799</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -175,7 +176,7 @@
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>1831042400</long>
+        <long>2076927900</long>
       </entry>
       <entry>
         <string>classLoad</string>
@@ -183,7 +184,7 @@
       </entry>
       <entry>
         <string>run</string>
-        <long>11419809100</long>
+        <long>17220035100</long>
       </entry>
       <entry>
         <string>parse</string>
@@ -191,17 +192,16 @@
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>5380853700</long>
+        <long>8884459400</long>
       </entry>
     </timings>
     <sandbox>true</sandbox>
-    <iota>48</iota>
-    <head>1:48</head>
-    <start>2</start>
-    <done>false</done>
+    <iota>59</iota>
+    <head>1:59</head>
+    <done>true</done>
     <resumeBlocked>false</resumeBlocked>
   </execution>
-  <completed>false</completed>
+  <completed>true</completed>
   <checkouts class="hudson.util.PersistedList">
     <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
       <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0">
