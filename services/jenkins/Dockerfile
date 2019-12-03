@@ -1,7 +1,7 @@
 FROM jenkins/jenkins:lts
-RUN apt-get update && \
-    apt-get -y install apt-transport-https \
-     ca-certificates \
+RUN apt-get update
+RUN apt-get -y install apt-transport-https
+RUN apt-get -y install ca-certificates \
      curl \
      gnupg2 \
      software-properties-common
