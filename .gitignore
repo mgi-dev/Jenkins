@@ -1,4 +1,2 @@
 data/*
-!data/jobs
-data/jobs/*/builds
 .idea
