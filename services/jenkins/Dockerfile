@@ -13,5 +13,5 @@ RUN add-apt-repository \
    stable"
 RUN apt-get update
 RUN apt-get -y install docker-ce
-#RUN apt-get -y install python-pip
-#RUN pip install docker-compose
+RUN apt-get -y install python-pip
+RUN pip install docker-compose
